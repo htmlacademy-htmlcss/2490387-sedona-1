@@ -1,0 +1,323 @@
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/ptsans-400.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/ptsans-700.woff2") format("woff2");
+    font-display: swap;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
+
+.header {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-weight: 400;
+    background-color: #f2f2f2;
+}
+
+.container {
+    width: 1200px;
+    background-color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+}
+
+.logo-link {}
+
+.logo-image {}
+
+.nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.main-menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu-item {}
+
+.menu-link {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.user-menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.user-menu-item {}
+
+.user-menu-link {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.fav-count {}
+
+.main {}
+
+.welcome {
+    background-color: #124669;
+    background-image: url("../images/vector.svg"), url("../images/welcome-background.jpg");
+    background-position: center bottom, center top;
+    padding-top: 51px;
+    padding-bottom: 82px;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 100% 57px, cover;
+    min-height: 352px;
+}
+
+.welcome-image {
+    display: block;
+    margin: 0 auto;
+}
+
+.advantages {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.advantages-text {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.advantages-subtext {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.advantages-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.advantages-item {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.advantages-cube {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.advantages-title {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.advantages-discription {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.advantages-image {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.service {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.service-text {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.service-subtext {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.service-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.service-item {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.service-title {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.service-description {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.search {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.search-text {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.search-subtext {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.serch-link {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.subscription {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.visually-hidden {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.subscription-text {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.subscription-subtext {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.action {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.subscription-input {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.contacts {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.socials {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.social-item {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.socials-link {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.social-item {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.socials-link {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.phones {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.logo-academy {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.img-academy {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
