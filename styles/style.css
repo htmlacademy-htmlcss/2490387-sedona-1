@@ -1,12 +1,51 @@
-.header{
-    margin: 0;
-    padding: 0;
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.header {
+  margin: 0;
+  padding: 0;
 }
 
 
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 400;
+  background-color: #f2f2f2;
+}
+
+.container {
+  width: 1200px;
+  background-color: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+
 }
 
 .logo-link {}
@@ -16,39 +55,118 @@ body {
 .nav {}
 
 .main-menu {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .menu-item {}
 
 .menu-link {
-    font-family: PT Sans;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 24px;
-    color: #000000;
-    text-decoration: none;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #000000;
+  text-decoration: none;
 }
 
 .user-menu {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .user-menu-item {}
 
-.user-menu-link menu-search {}
+.user-menu-link {}
 
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    overflow: hidden;
-    border: 0;
-    clip: rect(0 0 0 0);
+
+.fav-count {}
+
+.main {}
+
+.welcome {
+  background-color: #124669;
+  background-image: url("../images/vector.svg"), url("../images/welcome-background.jpg");
+  background-position: center bottom, center top;
+  padding-top: 51px;
+  padding-bottom: 82px;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 100% 57px, cover;
+  min-height: 352px;
 }
+
+.welcome-image {
+  display: block;
+  margin: 0 auto;
+}
+
+.advantages {}
+
+.advantages-text {}
+
+.advantages-subtext {}
+
+.advantages-list {}
+
+.advantages-cube {}
+
+.advantages-title {}
+
+.advantages-discription {}
+
+.advantages-image {}
+
+.service {}
+
+.service-text {}
+
+.service-subtext {}
+
+.service-list {}
+
+.service-item {}
+
+.service-title {}
+
+.service-description {}
+
+.search {}
+
+.search-text {}
+
+.search-subtext {}
+
+.serch-link {}
+
+.footer {}
+
+.subscription {}
+
+.visually-hidden {}
+
+.subscription-text {}
+
+.subscription-subtext {}
+
+.action {}
+
+.subscription-input {}
+
+.contacts {}
+
+.socials {}
+
+.social-item {}
+
+.socials-link {}
+
+.social-item {}
+
+.socials-link {}
+
+.phones {}
+
+.logo-academy {}
+
+.img-academy {}
