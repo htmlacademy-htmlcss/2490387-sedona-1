@@ -240,8 +240,9 @@ body {
   font-weight: 700;
   line-height: 36px;
 
-  padding-top: 30;
-  padding-left: 160;
+ display: block;
+    margin: 0 auto;
+
   list-style: none;
   text-decoration: none;
   color: #777171;
