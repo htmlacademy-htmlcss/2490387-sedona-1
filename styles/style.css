@@ -67,7 +67,7 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
-  background: blue;
+  /*background: blue;*/
   display: flex;
   flex-wrap: wrap;
   width: 500px;
@@ -176,19 +176,32 @@ body {
 }
 
 .service {
+  background-color: #ffffff;
+  background-position: center bottom, center top;
   margin: 0;
-  padding: 0;
+  padding: 16px 0 0px 0;
   list-style: none;
+  min-height: 210px;
+  text-align: center;
 }
 
 .service-text {
-  margin: 0;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+  margin: 0 0 20px;
   padding: 0;
   list-style: none;
 }
 
 .service-subtext {
-  margin: 0;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+  margin: 0px auto 65px;
   padding: 0;
   list-style: none;
 }
@@ -197,11 +210,13 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .service-item {
   margin: 0;
-  padding: 0;
+  padding: 241px 85px 81px 85px;
   list-style: none;
 }
 
