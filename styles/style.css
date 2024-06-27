@@ -96,9 +96,18 @@ body {
 .user-menu-item {}
 
 .user-menu-link {
-  margin: 0;
+  display: inline-block;
   padding: 0;
+  min-width: 0px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 36px;
   list-style: none;
+  text-decoration: none;
+  background: #756157;
+  color: #ffffff;
 }
 
 .fav-count {}
@@ -128,13 +137,22 @@ body {
 }
 
 .advantages-text {
-  margin: 0;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+  margin: 0 0 20px;
   padding: 0;
   list-style: none;
 }
 
 .advantages-subtext {
-  margin: 0;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+  margin: 0 auto 65px;
   padding: 0;
   list-style: none;
 }
@@ -143,12 +161,15 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .advantages-item {
   margin: 0;
   padding: 0;
-  list-style: none;
+  width: 400px;
+  box-sizing: border-box;
 }
 
 .advantages-cube {
@@ -158,15 +179,24 @@ body {
 }
 
 .advantages-title {
-  margin: 0;
-  padding: 0;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: center;
+  margin: 0 0 28px;
   list-style: none;
 }
 
 .advantages-discription {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: center;
   margin: 0;
   padding: 0;
   list-style: none;
+  width: 230px;
 }
 
 .advantages-image {
@@ -179,7 +209,7 @@ body {
   background-color: #ffffff;
   background-position: center bottom, center top;
   margin: 0;
-  padding: 16px 0 0px 0;
+  padding: 64px 0 0 0;
   list-style: none;
   min-height: 210px;
   text-align: center;
@@ -201,7 +231,7 @@ body {
   font-weight: 400;
   line-height: 26px;
   text-align: center;
-  margin: 0px auto 65px;
+  margin: 0 auto 65px;
   padding: 0;
   list-style: none;
 }
@@ -216,20 +246,36 @@ body {
 
 .service-item {
   margin: 0;
-  padding: 241px 85px 81px 85px;
-  list-style: none;
+  padding: 183px 85px 79px 85px;
+  width: 400px;
+  box-sizing: border-box;
+  background-color: #83B3D3;
 }
 
+.service-item:nth-child(2n) {
+  background-color: #ffffff;
+}
+
+
 .service-title {
-  margin: 0;
-  padding: 0;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: center;
+  margin: 0 0 28px;
   list-style: none;
 }
 
 .service-description {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: center;
   margin: 0;
   padding: 0;
   list-style: none;
+  width: 230px;
 }
 
 .search {
@@ -269,7 +315,6 @@ body {
   min-width: 356px;
   border-radius: 4px;
   text-transform: uppercase;
-  font-family: PT Sans;
   font-size: 20px;
   font-weight: 700;
   line-height: 36px;
@@ -298,15 +343,24 @@ body {
 }
 
 .subscription-text {
-  margin: 0;
-  padding: 0;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+  margin: 0 0 20px;
   list-style: none;
 }
 
 .subscription-subtext {
-  margin: 0;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+  margin: 0 auto 54px;
   padding: 0;
   list-style: none;
+  width: 633px;
 }
 
 .action {
@@ -325,6 +379,8 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: flex;
+  justify-content: space-between;
 }
 
 .socials {
@@ -358,9 +414,14 @@ body {
 }
 
 .phones {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 40px;
+  text-align: center;
+  color: #000000;
+
 }
 
 .logo-academy {
