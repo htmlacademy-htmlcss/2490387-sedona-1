@@ -142,8 +142,8 @@ body {
   font-weight: 700;
   line-height: 36px;
   text-align: center;
-  margin: 0 0 20px;
-  padding: 0;
+  margin: 0 0 25px;
+  padding: 69px 0 0 0;
   list-style: none;
 }
 
@@ -167,7 +167,7 @@ body {
 
 .advantages-item {
   margin: 0;
-  padding: 0;
+  padding: 102px 85px 102px 85px;
   width: 400px;
   box-sizing: border-box;
 }
@@ -325,6 +325,7 @@ body {
 }
 
 .footer {
+  background-color: #124669;
   margin: 0;
   padding: 0;
   list-style: none;
