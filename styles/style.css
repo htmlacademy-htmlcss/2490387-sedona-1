@@ -89,28 +89,29 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
-  background: red;
   display: flex;
+  padding-top: 14px;
 }
 
 .user-menu-item {}
 
-.user-menu-link {
+.user-menu-link-button {
   display: inline-block;
-  padding: 0;
-  min-width: 0px;
+  padding: 8px 34px 8px;
   border-radius: 4px;
   text-transform: uppercase;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 700;
-  line-height: 36px;
+  line-height: 20px;
   list-style: none;
   text-decoration: none;
   background: #756157;
   color: #ffffff;
 }
 
-.fav-count {}
+.fav-count {
+  padding: 10px 26px 7px 30px;
+}
 
 .main {}
 
@@ -152,9 +153,11 @@ body {
   font-weight: 400;
   line-height: 26px;
   text-align: center;
-  margin: 0 auto 65px;
+  margin: 0 auto 90px;
   padding: 0;
   list-style: none;
+  color: #333333;
+
 }
 
 .advantages-list {
@@ -167,15 +170,31 @@ body {
 
 .advantages-item {
   margin: 0;
-  padding: 102px 85px 102px 85px;
-  width: 400px;
-  box-sizing: border-box;
+  display: flex;
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item:nth-child(2n) {
+  background-color: rgba(131, 179, 211, 0.20);
+}
+
+
+
+.advantages-spec .advantages-discription {
+  color: #ffffff;
 }
 
 .advantages-cube {
-  margin: 0;
-  padding: 0;
+  padding: 113px 85px 112px 85px;
+  width: 400px;
   list-style: none;
+  box-sizing: border-box;
+}
+
+.advantages-spec .advantages-cube {
+  background-color: #83b3d3;
+  color: #ffffff;
+  padding: 103px 85px 100px 85px;
 }
 
 .advantages-title {
@@ -184,8 +203,9 @@ body {
   font-weight: 700;
   line-height: 28px;
   text-align: center;
-  margin: 0 0 28px;
+  margin: 0 auto 60px;
   list-style: none;
+  width: 175px;
 }
 
 .advantages-discription {
@@ -197,12 +217,14 @@ body {
   padding: 0;
   list-style: none;
   width: 230px;
+  color: #333333;
 }
 
 .advantages-image {
   margin: 0;
   padding: 0;
   list-style: none;
+  object-fit: cover;
 }
 
 .service {
@@ -234,6 +256,7 @@ body {
   margin: 0 auto 65px;
   padding: 0;
   list-style: none;
+  color: #333333;
 }
 
 .service-list {
@@ -249,7 +272,7 @@ body {
   padding: 183px 85px 79px 85px;
   width: 400px;
   box-sizing: border-box;
-  background-color: #83B3D3;
+  background-color: rgba(131, 179, 211, 0.12);
 }
 
 .service-item:nth-child(2n) {
@@ -276,6 +299,7 @@ body {
   padding: 0;
   list-style: none;
   width: 230px;
+  color: #333333;
 }
 
 .search {
@@ -307,9 +331,10 @@ body {
   padding: 0;
   list-style: none;
   width: 633px;
+  color: #333333;
 }
 
-.serch-link {
+.search-link {
   display: inline-block;
   padding: 8px 10px 8px;
   min-width: 356px;
@@ -325,16 +350,19 @@ body {
 }
 
 .footer {
-  background-color: #124669;
   margin: 0;
   padding: 0;
   list-style: none;
+
 }
 
 .subscription {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  background-color: #124669;
+  background-image: url("../images/subscribe.jpg");
+  background-position: center top;
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover;
+  min-height: 415px;
 }
 
 .visually-hidden {
@@ -347,9 +375,11 @@ body {
   text-transform: uppercase;
   font-size: 30px;
   font-weight: 700;
+  color: #ffffff;
   line-height: 36px;
   text-align: center;
   margin: 0 0 20px;
+  padding: 96px 0 0 0;
   list-style: none;
 }
 
@@ -357,6 +387,7 @@ body {
   font-size: 22px;
   font-weight: 400;
   line-height: 26px;
+  color: #ffffff;
   text-align: center;
   margin: 0 auto 54px;
   padding: 0;
@@ -365,9 +396,21 @@ body {
 }
 
 .action {
-  margin: 0;
-  padding: 0;
+  display: inline-block;
+  padding: 8px 10px 8px;
+  min-width: 356px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 36px;
   list-style: none;
+  text-decoration: none;
+  background: #82b2d2;
+  color: #ffffff;
+  justify-content: center;
+  list-style: none;
+  display: flex;
 }
 
 .subscription-input {
@@ -376,9 +419,25 @@ body {
   list-style: none;
 }
 
+/*.button {
+  display: inline-block;
+  padding: 8px 10px 8px;
+  min-width: 356px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 36px;
+  list-style: none;
+  text-decoration: none;
+  background: #82b2d2;
+  color: #ffffff;
+}*/
+
+
 .contacts {
   margin: 0;
-  padding: 0;
+  padding: 45px 70px 34px 212px;
   list-style: none;
   display: flex;
   justify-content: space-between;
