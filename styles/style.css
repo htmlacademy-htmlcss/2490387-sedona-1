@@ -97,7 +97,7 @@ body {
 
 .user-menu-link-button {
     display: inline-block;
-    padding: 8px 34px 8px;
+    padding: 8px 10px 8px;
     border-radius: 4px;
     text-transform: uppercase;
     font-size: 16px;
@@ -107,6 +107,8 @@ body {
     text-decoration: none;
     background: #756157;
     color: #ffffff;
+    min-width: 140px;
+    text-align: center;
 }
 
 .fav-count {
@@ -270,7 +272,29 @@ body {
     width: 400px;
     box-sizing: border-box;
     background-color: rgba(131, 179, 211, 0.12);
+
 }
+
+.house-image {
+    background-image: url("../images/house.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: center bottom, center top;
+
+
+}
+
+.burger-image {
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+.present-image {
+    display: block;
+    margin: 0 auto;
+}
+
 
 .service-item:nth-child(2n) {
     background-color: #ffffff;
@@ -358,6 +382,8 @@ body {
     background-repeat: no-repeat, no-repeat;
     background-size: cover;
     min-height: 415px;
+    padding: 96px 0 105px 0;
+    box-sizing: border-box;
 }
 
 .visually-hidden {
@@ -374,7 +400,7 @@ body {
     line-height: 36px;
     text-align: center;
     margin: 0 0 20px;
-    padding: 96px 0 0 0;
+    padding: 0;
     list-style: none;
 }
 
@@ -390,7 +416,7 @@ body {
     width: 633px;
 }
 
-.action {
+.subscribe-form {
     padding: 0;
     margin: 0;
     border-radius: 4px;
@@ -405,18 +431,29 @@ body {
     display: flex;
 }
 
-.subscription-input {
-    margin: 0px 0px 0 0;
-    padding: 0px 158px 0px 0px;
-    border-radius: inherit;
+.subscribe-input {
+    margin: 0;
+    padding: 0 0 0 20px;
+    width: 452px;
+    height: 52px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    background-color: #f2f2f2;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+
 }
 
-.button-subscription {
+.subscribe-button {
     display: inline-block;
     padding: 8px 10px 8px;
-    min-width: 356px;
-    border-radius: 4px;
+    min-width: 232px;
+    border-radius: 0 4px 4px 0;
     text-transform: uppercase;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 20px;
     font-weight: 700;
     line-height: 36px;
@@ -424,6 +461,8 @@ body {
     text-decoration: none;
     background: #82b2d2;
     color: #ffffff;
+    box-sizing: border-box;
+    border: none;
 }
 
 .contacts {
@@ -481,7 +520,7 @@ body {
 }
 
 .img-academy {
-    margin: 0;
+    margin: 3px 0;
     padding: 0;
     list-style: none;
 }
