@@ -475,7 +475,7 @@ body {
 
 .contacts {
     margin: 0;
-    padding: 45px 70px 34px 212px;
+    padding: 45px 70px 34px 80px;
     list-style: none;
     display: flex;
     justify-content: space-between;
