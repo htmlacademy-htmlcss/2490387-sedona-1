@@ -43,7 +43,6 @@
           </ul>
         </nav>
       </header>
-
       <main class="main">
         <h1 class="visually-hidden">Неофициальный сайт города Седона</h1>
         <section class="welcome">
@@ -54,7 +53,6 @@
           <h2 class="visually-hidden">Преимущества</h2>
           <p class="advantages-text">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</p>
           <p class="advantages-subtext">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
-
           <ul class="advantages-list">
             <li class="advantages-item advantages-spec">
               <div class="advantages-cube">
@@ -104,21 +102,18 @@
               <p class="service-description">Рекомендуем пожить<br> в настоящем мотеле,<br> всё как в
                 кино!
               </p>
-
             </li>
             <li class="service-item burger">
               <h3 class="service-title">Еда</h3>
               <p class="service-description">Всегда заказывайте<br> топовый фирменный бургер,<br> вы не
                 разочаруетесь!
               </p>
-
             </li>
             <li class="service-item present">
               <h3 class="service-title">Сувениры</h3>
               <p class="service-description">Не только китайского,<br> но и настоящего местного<br>
                 производства!
               </p>
-
             </li>
           </ul>
         </section>
@@ -164,8 +159,6 @@
                     d="M16.785 0.955705L0.840489 7.1042C-0.247661 7.54126 -0.241365 8.14828 0.640845 8.41897L4.73445 9.69597L14.2058 3.72014C14.6537 3.44766 15.0629 3.59424 14.7265 3.89281L7.05283 10.8183H7.05103L7.05283 10.8192L6.77045 15.0387C7.18413 15.0387 7.36669 14.8489 7.59871 14.625L9.58705 12.6915L13.7229 15.7464C14.4855 16.1664 15.0332 15.9506 15.2229 15.0405L17.9379 2.2453C18.2158 1.13107 17.5126 0.626562 16.785 0.955705Z"
                     fill="currentColor" />
                 </svg>
-
-
               </a>
             </li>
             <li class="social-item">
@@ -176,7 +169,6 @@
                     d="M18.9402 0.356445H3.50738C1.64668 0.356445 0.333252 1.9502 0.333252 3.75645V13.8502C0.333252 15.7627 1.64668 17.3564 3.50738 17.3564H19.1591C20.8009 17.3564 22.3333 15.7627 22.3333 13.9564V3.75645C22.1143 1.9502 20.8009 0.356445 18.9402 0.356445ZM7.99494 12.8939V4.81894L15.3283 8.85645L7.99494 12.8939Z"
                     fill="currentColor" />
                 </svg>
-
               </a>
             </li>
           </ul>
@@ -220,11 +212,75 @@
                 d="M109.4 27.3564L105.8 18.4564H103.6L108.4 30.0564C108.1 30.9564 107.7 31.2564 106.7 31.2564H104.2V33.2564H106.7C108.5 33.2564 109.5 32.4564 110.2 30.6564L114.9 18.4564H112.8L109.4 27.3564Z"
                 fill="currentColor" />
             </svg>
-
           </a>
         </section>
       </footer>
     </div>
+    <div class="modal modal-close1">
+      <div class="modal-container">
+        <button class="close-modal-button" type="button">
+          <span class="visually-hidden">Закрыть модальное окно</span>
+        </button>
+        <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+        <form action="http://echo.htmlacademy.ru" method="post">
+          <div class="row-container">
+            <label for="date-arrival" class="modal-label">Дата Заезда:</label>
+            <div class="input-container">
+              <input type="text" class="modal-input" id="date-arrival" value="27 апреля 2020"
+                placeholder="Укажите дату заезда">
+              <p class="modal-message error">Мы не можем отправить вас в прошлое.</p>
+            </div>
+          </div>
+          <div class="row-container">
+            <label for="date-departure" class="modal-label">Дата Выезда:</label>
+            <div class="input-container">
+              <input type="text" class="modal-input" id="date-departure" value="1 сентября 2023"
+                placeholder="Укажите дату выезда">
+              <p class="modal-message">На эти даты есть свободные номера. Пока есть.</p>
+            </div>
+          </div>
+          <div class="row-container">
+            <div class="short-complex">
+              <label for="adults" class="modal-label">Взрослые:</label>
+              <div class="comlex-input">
+                <button class="comlex-input-button" type="button">
+                  <span class="visually-hidden">Уменьшить значение на единицу</span>
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 9V11H17V9H3Z" fill="#756157" />
+                  </svg>
+                </button>
+                <input type="text" class="comlex-input-input" id="adults" value="2">
+                <button class="comlex-input-button" type="button">
+                  <span class="visually-hidden">Увеличить значение на единицу</span>
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="#756157" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="short-complex">
+              <label for="" class="modal-label"></label>
+              <div class="comlex-input">
+                <button class="comlex-input-button" type="button">
+                  <span class="visually-hidden">Уменьшить значение на единицу</span>
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 9V11H17V9H3Z" fill="#756157" />
+                  </svg>
+                </button>
+                <input type="text" class="comlex-input-input" value="2">
+                <button class="comlex-input-button" type="button">
+                  <span class="visually-hidden">Увеличить значение на единицу</span>
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="#756157" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="./scripts/script.js"></script>
   </body>
 
 </html>
