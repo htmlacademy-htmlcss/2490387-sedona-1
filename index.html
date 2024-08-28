@@ -216,67 +216,83 @@
         </section>
       </footer>
     </div>
-    <div class="modal modal-close1">
+    <div class="modal modal-close">
       <div class="modal-container">
         <button class="close-modal-button" type="button">
           <span class="visually-hidden">Закрыть модальное окно</span>
         </button>
         <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
         <form action="http://echo.htmlacademy.ru" method="post">
-          <div class="row-container">
-            <label for="date-arrival" class="modal-label">Дата Заезда:</label>
-            <div class="input-container">
-              <input type="text" class="modal-input" id="date-arrival" value="27 апреля 2020"
-                placeholder="Укажите дату заезда">
-              <p class="modal-message error">Мы не можем отправить вас в прошлое.</p>
-            </div>
-          </div>
-          <div class="row-container">
-            <label for="date-departure" class="modal-label">Дата Выезда:</label>
-            <div class="input-container">
-              <input type="text" class="modal-input" id="date-departure" value="1 сентября 2023"
-                placeholder="Укажите дату выезда">
-              <p class="modal-message">На эти даты есть свободные номера. Пока есть.</p>
-            </div>
-          </div>
-          <div class="row-container">
-            <div class="short-complex">
-              <label for="adults" class="modal-label">Взрослые:</label>
-              <div class="comlex-input">
-                <button class="comlex-input-button" type="button">
-                  <span class="visually-hidden">Уменьшить значение на единицу</span>
-                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M3 9V11H17V9H3Z" fill="#756157" />
-                  </svg>
-                </button>
-                <input type="text" class="comlex-input-input" id="adults" value="2">
-                <button class="comlex-input-button" type="button">
-                  <span class="visually-hidden">Увеличить значение на единицу</span>
-                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="#756157" />
-                  </svg>
-                </button>
+          <div class="form-wrapper">
+            <div class="row-container">
+              <label for="date-arrival" class="modal-label">Дата Заезда:</label>
+              <div class="input-container">
+                <input type="text" class="modal-input" id="date-arrival" name="date-arrival" value="27 апреля 2020"
+                  placeholder="Укажите дату заезда">
+                <p class="modal-message error">Мы не можем отправить вас в прошлое.</p>
               </div>
             </div>
-            <div class="short-complex">
-              <label for="" class="modal-label"></label>
-              <div class="comlex-input">
-                <button class="comlex-input-button" type="button">
-                  <span class="visually-hidden">Уменьшить значение на единицу</span>
-                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M3 9V11H17V9H3Z" fill="#756157" />
-                  </svg>
-                </button>
-                <input type="text" class="comlex-input-input" value="2">
-                <button class="comlex-input-button" type="button">
-                  <span class="visually-hidden">Увеличить значение на единицу</span>
-                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="#756157" />
-                  </svg>
-                </button>
+            <div class="row-container">
+              <label for="date-departure" class="modal-label">Дата Выезда:</label>
+              <div class="input-container">
+                <input type="text" class="modal-input" id="date-departure" name="date-departure" value="1 сентября 2023"
+                  placeholder="Укажите дату выезда">
+                <p class="modal-message">На эти даты есть свободные номера. Пока есть.</p>
+              </div>
+            </div>
+            <div class="row-container">
+              <div class="short-complex">
+                <label for="adults" class="modal-label">Взрослые:</label>
+                <div class="comlex-input">
+                  <button class="comlex-input-button" type="button">
+                    <span class="visually-hidden">Уменьшить значение на единицу</span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3 9V11H17V9H3Z" fill="#756157" />
+                    </svg>
+                  </button>
+                  <input type="text" class="comlex-input-input" name="adults" id="adults" value="2">
+                  <button class="comlex-input-button" type="button">
+                    <span class="visually-hidden">Увеличить значение на единицу</span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="#756157" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="short-complex short-complex-children">
+                <div class="tooltip-container">
+                  <label for="children" class="modal-label">Дети:</label>
+                  <button class="tooltip-active">
+                    <span class="visually-hidden">Показать дополнительную информацию</span>
+                    <svg width="2" height="12" viewBox="0 0 2 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H2V2H0V0ZM2 12H0V3H2V12Z" fill="white" />
+                    </svg>
+                  </button>
+                  <span class="tooltip-info-wrapper">
+                    <span class="tooltip-info">Укажите количество детей, которые будут с
+                      вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                  </span>
+                </div>
+
+                <div class="comlex-input">
+                  <button class="comlex-input-button" type="button">
+                    <span class="visually-hidden">Уменьшить значение на единицу</span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3 9V11H17V9H3Z" fill="#756157" />
+                    </svg>
+                  </button>
+                  <input type="text" class="comlex-input-input" value="2" name="children" id="children">
+                  <button class="comlex-input-button" type="button">
+                    <span class="visually-hidden">Увеличить значение на единицу</span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="#756157" />
+                    </svg>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
+          <button class="modal-submit" type="submit">Найти</button>
         </form>
       </div>
     </div>

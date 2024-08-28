@@ -1218,7 +1218,15 @@ body {
 .row-container {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 24px;
+  margin-bottom: 23px;
+}
+
+.form-wrapper {
+  margin: 0 0 48px;
+}
+
+.row-container:last-child {
+  margin-bottom: 0;
 }
 
 .modal-label {
@@ -1244,7 +1252,7 @@ body {
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
-  padding: 0 60px 0 20px;
+  padding: 2px 60px 0 20px;
   box-sizing: border-box;
 }
 
@@ -1254,7 +1262,6 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 21px;
-
 }
 
 .error {
@@ -1265,6 +1272,10 @@ body {
   width: 247px;
   display: flex;
   justify-content: space-between;
+}
+
+.short-complex-children {
+  width: 242px;
 }
 
 .comlex-input {
@@ -1290,4 +1301,80 @@ body {
   font-size: 18px;
   font-weight: 700;
   line-height: 20px;
+}
+
+.tooltip-container {
+  position: relative;
+  padding-right: 37px;
+  padding-top: 12px;
+}
+
+.tooltip-active {
+  position: absolute;
+  right: 0;
+  top: 11px;
+  width: 26px;
+  height: 26px;
+  background-color: #83b3d3;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.tooltip-info-wrapper {
+  position: absolute;
+  top: 100%;
+  left: -56px;
+  padding-top: 4px;
+  display: none;
+}
+
+.tooltip-info {
+  width: 256px;
+  padding: 20px 18px 23px 22px;
+  background-color: #333333;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  border-radius: 10px;
+  display: block;
+  box-sizing: border-box;
+  position: relative;
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.3);
+}
+
+.tooltip-info::before {
+  content: "";
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  background-color: #333333;
+  transform: rotate(45deg);
+  top: -6px;
+  left: 121px;
+}
+
+.tooltip-container:hover .tooltip-info-wrapper,
+.tooltip-active:focus + .tooltip-info-wrapper {
+  display: block;
+}
+
+.modal-submit {
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #ffffff;
+  background-color: #83b3d3;
+  border-radius: 10px;
+  border: none;
+  text-transform: uppercase;
+  width: 100%;
+  min-height: 60px;
+  display: block;
+  margin: 0 auto;
 }
