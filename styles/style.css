@@ -57,7 +57,22 @@ body {
   top: 0;
 }
 
-.logo-image {}
+.logo-link:hover {
+  opacity: 0.6;
+}
+
+.logo-link:focus {
+  outline: none;
+  opacity: 0.6;
+}
+
+.logo-link:active {
+  opacity: 0.4;
+}
+
+.logo-image {
+  display: block;
+}
 
 .nav {
   margin: 0;
@@ -76,8 +91,6 @@ body {
   width: 500px;
 }
 
-.menu-item {}
-
 .menu-link {
   font-size: 20px;
   font-weight: 700;
@@ -86,6 +99,21 @@ body {
   text-decoration: none;
   padding: 20px 16px;
   display: block;
+}
+
+.menu-link:hover {
+  color: #756157;
+}
+
+.menu-link:focus {
+  outline: none;
+  color: #756157;
+}
+
+.menu-link:active {
+  color: #756157;
+  opacity: 0.4;
+
 }
 
 .menu-link-active {
@@ -118,11 +146,26 @@ body {
   height: 36px;
   background-repeat: no-repeat;
   background-position: center;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+}
+
+.user-menu-link:hover {
+  color: #756157;
+}
+
+.user-menu-link:focus {
+  outline: none;
+  color: #756157;
+}
+
+.user-menu-link:active {
+  color: rgba(117, 97, 87, 0.4);
 }
 
 .menu-favorite {
-  background-image: url(../images/svg-heart.svg);
   position: relative;
 }
 
@@ -146,10 +189,6 @@ body {
   box-sizing: border-box;
 }
 
-.menu-search {
-  background-image: url(../images/search.svg);
-}
-
 .user-menu-link-button {
   display: inline-block;
   padding: 8px 10px 8px;
@@ -167,6 +206,19 @@ body {
   margin-left: 20px;
 }
 
+.user-menu-link-button:hover {
+  background-color: #615048;
+}
+
+.user-menu-link-button:focus {
+  outline: none;
+  background-color: #615048;
+}
+
+.user-menu-link-button:active {
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.3);
+}
 
 
 .main {
@@ -433,6 +485,20 @@ body {
   color: #ffffff;
 }
 
+.search-link:hover {
+  background-color: #615048;
+}
+
+.search-link:focus {
+  outline: none;
+  background-color: #615048;
+}
+
+.search-link:active {
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .footer {}
 
 .subscription {
@@ -511,6 +577,16 @@ body {
   line-height: 24px;
 }
 
+.subscribe-input:hover {
+  background-color: #e6e6e6;
+}
+
+.subscribe-input:focus {
+  background-color: #e6e6e6;
+  outline: 3px solid #89b3d3;
+}
+
+
 .subscribe-button {
   display: inline-block;
   padding: 8px 10px 8px;
@@ -529,13 +605,24 @@ body {
   border: none;
 }
 
-.subscribe-button:hover {}
+.subscribe-button:hover {
+  background-color: #68a2ca;
+}
 
-.subscribe-button:focus {}
+.subscribe-button:focus {
+  background-color: #68a2ca;
+  outline: none;
+}
 
-.subscribe-button:active {}
 
-.subscribe-button:disabled {}
+.subscribe-button:active {
+  background-color: #68a2ca;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.subscribe-button:disabled {
+  background-color: #e5e5e5;
+}
 
 .contacts {
   margin: 0;
@@ -892,6 +979,57 @@ body {
   left: 72%;
 }
 
+.submit-filter-button {
+  display: block;
+  margin-bottom: 32px;
+  min-width: 191px;
+  height: 36px;
+  font-family: "PT Sans", sans-serif;
+  background-color: #68a2ca;
+  padding: 8px 5px 8px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 4px;
+  border: none;
+}
+
+.submit-filter-button:hover {
+  background-color: #68a2ca;
+}
+
+.submit-filter-button:focus {
+  outline: none;
+  background-color: #68a2ca;
+}
+
+.submit-filter-button:active {
+  background-color: #68a2ca;
+  color: rgba(104, 162, 202, 0, 3);
+}
+
+.reset-filter {
+  display: block;
+  min-width: 191px;
+  height: 36px;
+  font-family: "PT Sans", sans-serif;
+  background: none;
+  padding: 8px 5px 8px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 4px;
+  border: none;
+}
+
 .result {
   display: flex;
   justify-content: space-between;
@@ -959,7 +1097,7 @@ body {
   width: 46px;
   height: 47px;
   display: block;
-  border: 2px solid red;
+  border: 2px solid #e5e5e5;
   border-radius: 4px;
   background-color: #ffffff;
   background-position: center center;
@@ -967,7 +1105,7 @@ body {
 }
 
 .view-button-active {
-  border-color: green;
+  border-color: #000000;
 }
 
 .view-button-tile {
@@ -983,16 +1121,16 @@ body {
 }
 
 .view-button:hover {
-  border-color: green;
+  border-color: #000000;
 }
 
 .view-button:focus {
-  border-color: blue;
+  border-color: #68a2ca;
   outline: none;
 }
 
 .view-button:active {
-  border-color: green;
+  border-color: #000000;
 }
 
 .response {}
@@ -1065,12 +1203,70 @@ body {
   border: none;
 }
 
+/* .subscribe-button:hover {
+  background-color: #68a2ca;
+}
+
+.subscribe-button:focus {
+  background-color: #68a2ca;
+  outline: none;
+}
+
+
+.subscribe-button:active {
+  background-color: #68a2ca;
+  color: rgba(255, 255, 255, 0.3);
+} */
+
+/* .user-menu-link-button:hover {
+  background-color: #615048;
+}
+
+.user-menu-link-button:focus {
+  outline: none;
+  background-color: #615048;
+}
+
+.user-menu-link-button:active {
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.3);
+} */
+
 .card-info {
   background-color: #756157;
 }
 
+.card-info:hover {
+  background-color: #615048;
+}
+
+.card-info:focus {
+  outline: none;
+  background-color: #615048;
+}
+
+.card-info:active {
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .card-fav {
   background-color: #82b3d3;
+}
+
+.card-fav:hover {
+  background-color: #68a2ca;
+}
+
+.card-fav:focus {
+  background-color: #68a2ca;
+  outline: none;
+}
+
+
+.card-fav:active {
+  background-color: #68a2ca;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .card-fav-add {
@@ -1080,6 +1276,21 @@ body {
 .card-fav-remove {
   background-color: #7db54f
 }
+
+.card-fav-remove:hover {
+  background-color: #6c9e42;
+}
+
+.card-fav-remove:focus {
+  background-color: #6c9e42;
+  outline: none;
+}
+
+.card-fav-remove:active {
+  background-color: #7db54f;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 
 .card-raiting {
   background-color: #f2f2f2;
@@ -1252,6 +1463,7 @@ body {
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
+  background: #f2f2f2 url("../images/date.svg") no-repeat right 20px top 14px;
   padding: 2px 60px 0 20px;
   box-sizing: border-box;
 }
