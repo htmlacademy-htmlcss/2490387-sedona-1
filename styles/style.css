@@ -37,7 +37,6 @@ body {
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
   background-color: #f2f2f2;
-  /* overflow: hidden; */
 }
 
 .container {
@@ -113,11 +112,9 @@ body {
 .menu-link:active {
   color: #756157;
   opacity: 0.4;
-
 }
 
 .menu-link-active {
-
   position: relative;
 }
 
@@ -138,8 +135,6 @@ body {
   display: flex;
   padding-top: 14px;
 }
-
-.user-menu-item {}
 
 .user-menu-link {
   width: 44px;
@@ -219,7 +214,6 @@ body {
   background-color: #756157;
   color: rgba(255, 255, 255, 0.3);
 }
-
 
 .main {
   flex-grow: 1;
@@ -499,8 +493,6 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.footer {}
-
 .subscription {
   min-height: 415px;
   padding: 96px 0 105px 0;
@@ -515,7 +507,6 @@ body {
   background-size: cover;
   min-height: 415px;
 }
-
 
 .subscription-text {
   text-transform: uppercase;
@@ -544,7 +535,6 @@ body {
 .home .subscription-text,
 .home .subscription-subtext {
   color: #ffffff;
-
 }
 
 .subscribe-form {
@@ -586,7 +576,6 @@ body {
   outline: 3px solid #89b3d3;
 }
 
-
 .subscribe-button {
   display: inline-block;
   padding: 8px 10px 8px;
@@ -613,7 +602,6 @@ body {
   background-color: #68a2ca;
   outline: none;
 }
-
 
 .subscribe-button:active {
   background-color: #68a2ca;
@@ -659,7 +647,6 @@ body {
 
 .socials-link:hover {
   color: #68A2CA;
-
 }
 
 .socials-link:focus {
@@ -682,7 +669,6 @@ body {
 }
 
 .phones:hover {
-
   color: #756157;
 }
 
@@ -774,6 +760,15 @@ body {
   color: #ffffff;
 }
 
+.bk-link:hover {
+  opacity: 0.6;
+}
+
+.bk-link:focus {
+  outline: none;
+  opacity: 0.6;
+}
+
 .bk-link-catalog-house {
   background: url("../images/catalog-house.svg") no-repeat center 3px;
   width: 19px;
@@ -806,6 +801,10 @@ body {
   padding-top: 32px;
 }
 
+.filter-group-submit {
+  padding: 56px 0 0 21px;
+}
+
 .filter-list {
   padding: 0;
   margin: 0;
@@ -829,6 +828,7 @@ body {
   line-height: 23px;
   color: #ffffff;
   position: relative;
+  cursor: pointer;
 }
 
 .checkbox-label {
@@ -888,6 +888,27 @@ body {
   display: block;
 }
 
+.control-label:hover {
+  opacity: 0.6;
+}
+
+.control:focus + .control-label:hover {
+  opacity: 1;
+}
+
+.control:focus + .control-label::before {
+  outline: 3px solid #83b3d3;
+}
+
+.control:active + .control-label {
+  opacity: 0.3;
+}
+
+.control:disabled + .control-label {
+  opacity: 0.2;
+  cursor: auto;
+}
+
 .price-container {
   display: flex;
   position: relative;
@@ -906,12 +927,21 @@ body {
   padding-left: 21px;
   border: none;
   padding-right: 47px;
+  background-color: #f2f2f2;
+}
+
+.price-input:hover {
+  background-color: #e6e6e6;
+}
+
+.price-input:focus {
+  outline: 3px solid #83b3d3;
+  z-index: 5;
 }
 
 .price-input-min {
   border-radius: 4px 0 0 4px;
 }
-
 
 .price-input-max {
   border-radius: 0 4px 4px 0;
@@ -932,7 +962,6 @@ body {
 
 .price-label-max {
   left: 251px;
-
 }
 
 .range-container {
@@ -971,6 +1000,15 @@ body {
   top: 0;
 }
 
+.range-handler:focus {
+  outline: 3px solid #83b3d3;
+}
+
+.range-handler:active {
+  box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.4);
+  outline: 2px solid #83b3d3;
+}
+
 .range-handler-min {
   left: 0;
 }
@@ -985,7 +1023,7 @@ body {
   min-width: 191px;
   height: 36px;
   font-family: "PT Sans", sans-serif;
-  background-color: #68a2ca;
+  background-color: #82b3d3;
   padding: 8px 5px 8px;
   font-size: 16px;
   font-weight: 700;
@@ -1008,8 +1046,8 @@ body {
 }
 
 .submit-filter-button:active {
-  background-color: #68a2ca;
-  color: rgba(104, 162, 202, 0, 3);
+  background-color: #82b3d3;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .reset-filter {
@@ -1028,6 +1066,23 @@ body {
   text-decoration: none;
   border-radius: 4px;
   border: none;
+}
+
+.reset-filter:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.reset-filter:focus {
+  outline: 3px solid #83b3d3;
+}
+
+.reset-filter:active {
+  outline: none;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.reset-filter:disabled {
+  color: rgba(255, 255, 255, 0.1);
 }
 
 .result {
@@ -1091,8 +1146,6 @@ body {
   width: 160px;
 }
 
-.view-item {}
-
 .view-button {
   width: 46px;
   height: 47px;
@@ -1133,8 +1186,6 @@ body {
   border-color: #000000;
 }
 
-.response {}
-
 .response-list {
   padding: 0 0 39px;
   margin: 0 auto;
@@ -1172,6 +1223,11 @@ body {
   margin-bottom: 15px;
 }
 
+.card-title:focus {
+  color: #756157;
+  outline: none;
+}
+
 .card-description {
   display: grid;
   grid-template-columns: 141px 140px;
@@ -1202,35 +1258,6 @@ body {
   border-radius: 4px;
   border: none;
 }
-
-/* .subscribe-button:hover {
-  background-color: #68a2ca;
-}
-
-.subscribe-button:focus {
-  background-color: #68a2ca;
-  outline: none;
-}
-
-
-.subscribe-button:active {
-  background-color: #68a2ca;
-  color: rgba(255, 255, 255, 0.3);
-} */
-
-/* .user-menu-link-button:hover {
-  background-color: #615048;
-}
-
-.user-menu-link-button:focus {
-  outline: none;
-  background-color: #615048;
-}
-
-.user-menu-link-button:active {
-  background-color: #756157;
-  color: rgba(255, 255, 255, 0.3);
-} */
 
 .card-info {
   background-color: #756157;
@@ -1263,7 +1290,6 @@ body {
   outline: none;
 }
 
-
 .card-fav:active {
   background-color: #68a2ca;
   color: rgba(255, 255, 255, 0.3);
@@ -1290,7 +1316,6 @@ body {
   background-color: #7db54f;
   color: rgba(255, 255, 255, 0.3);
 }
-
 
 .card-raiting {
   background-color: #f2f2f2;
@@ -1342,8 +1367,6 @@ body {
   gap: 8px;
 }
 
-.pagination-item {}
-
 .pagination-link {
   display: flex;
   justify-content: center;
@@ -1359,13 +1382,19 @@ body {
   text-decoration: none;
 }
 
-.pagination-link:hover {}
+.pagination-link:hover {
+  background-color: #68a2ca;
+}
 
-.pagination-link:focus {}
+.pagination-link:focus {
+  outline: none;
+  background-color: #68a2ca;
+}
 
-.pagination-link:active {}
-
-.pagination-link:disabled {}
+.pagination-link:active {
+  background-color: #82b3d3;
+  color: rgba(255, 255, 255, 0.3);
+}
 
 .pagination-link-active {
   color: #000000;
@@ -1408,13 +1437,39 @@ body {
   width: 52px;
   height: 52px;
   border: none;
-  background: #f2f2f2 url("../images/cross.svg") no-repeat 19px 19px;
+  background: #f2f2f2;
   cursor: pointer;
   border-radius: 50%;
   position: absolute;
   right: 52px;
   top: 64px;
   padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.close-modal-button::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: url("../images/cross.svg") no-repeat center center;
+}
+
+.close-modal-button:hover {
+  background-color: #e6e6e6;
+}
+
+.close-modal-button:focus {
+  outline: 3px solid #83b3d3;
+}
+
+.close-modal-button:active {
+  outline: none;
+}
+
+.close-modal-button:active::before {
+  opacity: 0.3;
 }
 
 .modal-title {
@@ -1468,6 +1523,14 @@ body {
   box-sizing: border-box;
 }
 
+.modal-input:hover {
+  background-color: #e6e6e6;
+}
+
+.modal-input:focus {
+  outline: 3px solid #83b3d3;
+}
+
 .modal-message {
   padding: 4px 0 0 21px;
   margin: 0;
@@ -1490,21 +1553,53 @@ body {
   width: 242px;
 }
 
-.comlex-input {
+.complex-input {
   width: 110px;
   display: flex;
-  border-radius: 4px;
-  overflow: hidden;
 }
 
-.comlex-input-button {
+.complex-input-button {
   width: 40px;
   border: none;
   height: 48px;
   background-color: #f2f2f2;
+  color: rgba(0, 0, 0, 0.2);
 }
 
-.comlex-input-input {
+.minus {
+  border-radius: 4px 0 0 4px;
+}
+
+.plus {
+  border-radius: 0 4px 4px 0;
+}
+
+.complex-input-button:focus {
+  outline: none;
+}
+
+.complex-input-button:hover {
+  color: #000000;
+}
+
+.complex-input-button:focus {
+  color: #000000;
+}
+
+.complex-input-button:focus svg {
+  outline: 3px solid #83b3d3;
+  border-radius: 4px;
+}
+
+.complex-input-button:active {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.complex-input-button:active svg {
+  outline: none;
+}
+
+.complex-input-input {
   width: 30px;
   border: none;
   background-color: #f2f2f2;
@@ -1513,6 +1608,11 @@ body {
   font-size: 18px;
   font-weight: 700;
   line-height: 20px;
+}
+
+.complex-input-input:focus {
+  outline: 3px solid #83b3d3;
+  z-index: 5;
 }
 
 .tooltip-container {
@@ -1533,7 +1633,15 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
 
+.tooltip-active:hover {
+  background-color: #68a2ca;
+}
+
+.tooltip-active:focus {
+  background-color: #68a2ca;
+  outline: none;
 }
 
 .tooltip-info-wrapper {
@@ -1589,4 +1697,18 @@ body {
   min-height: 60px;
   display: block;
   margin: 0 auto;
+}
+
+.modal-submit:hover {
+  background-color: #68a2ca;
+}
+
+.modal-submit:focus {
+  background-color: #68a2ca;
+  outline: none;
+}
+
+.modal-submit:active {
+  background-color: #68a2ca;
+  color: rgba(255, 255, 255, 0.2);
 }
