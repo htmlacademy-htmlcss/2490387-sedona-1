@@ -186,8 +186,8 @@
           <div class="phones">
             <a href="tel:+78128121212" class="phones">+7 (812) 812-12-12</a>
           </div>
-          <a href="https://htmlacademy.ru/" class="logo-academy">
-            <svg width="115" height="34" viewBox="0 0 115 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <a href="https://htmlacademy.ru/" class="logo-academy" aria-label="HTMLAcademy">
+            <svg width="115" height="34" viewBox="0 0 115 34" role="img" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M0 13.2564V15.8564H2.5V13.2564H0Z" fill="currentColor" />
               <path
                 d="M11.6 4.85645C10 4.85645 8.8 5.55645 8 6.55645H7.9V0.356445H5.9V15.8564H7.9V10.5564C7.9 8.45645 9.2 6.95645 11.2 6.95645C13 6.95645 14.1 8.35645 14.1 10.1564V15.8564H16.1V9.75644C16.2 6.75644 14.3 4.85645 11.6 4.85645Z"
@@ -239,7 +239,7 @@
               <label for="date-arrival" class="modal-label">Дата Заезда:</label>
               <div class="input-container">
                 <input type="text" class="modal-input" id="date-arrival" name="date-arrival" value="27 апреля 2020"
-                  placeholder="Укажите дату заезда">
+                  placeholder="Укажите дату заезда" required>
                 <p class="modal-message error">Мы не можем отправить вас в прошлое.</p>
               </div>
             </div>
@@ -247,7 +247,7 @@
               <label for="date-departure" class="modal-label">Дата Выезда:</label>
               <div class="input-container">
                 <input type="text" class="modal-input" id="date-departure" name="date-departure" value="1 сентября 2023"
-                  placeholder="Укажите дату выезда">
+                  placeholder="Укажите дату выезда" required>
                 <p class="modal-message">На эти даты есть свободные номера. Пока есть.</p>
               </div>
             </div>
@@ -261,7 +261,7 @@
                       <path d="M3 9V11H17V9H3Z" fill="currentColor" />
                     </svg>
                   </button>
-                  <input type="text" class="complex-input-input" name="adults" id="adults" value="2">
+                  <input type="text" class="complex-input-input" name="adults" id="adults" value="2" required>
                   <button class="complex-input-button plus" type="button">
                     <span class="visually-hidden">Увеличить значение на единицу</span>
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -273,7 +273,7 @@
               <div class="short-complex short-complex-children">
                 <div class="tooltip-container">
                   <label for="children" class="modal-label">Дети:</label>
-                  <button class="tooltip-active">
+                  <button class="tooltip-active" type="button">
                     <span class="visually-hidden">Показать дополнительную информацию</span>
                     <svg width="2" height="12" viewBox="0 0 2 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H2V2H0V0ZM2 12H0V3H2V12Z" fill="white" />
@@ -292,7 +292,7 @@
                       <path d="M3 9V11H17V9H3Z" fill="currentColor" />
                     </svg>
                   </button>
-                  <input type="text" class="complex-input-input" value="2" name="children" id="children">
+                  <input type="text" class="complex-input-input" value="2" name="children" id="children" required>
                   <button class="complex-input-button plus" type="button">
                     <span class="visually-hidden">Увеличить значение на единицу</span>
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
